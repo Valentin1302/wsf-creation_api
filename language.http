@@ -1,0 +1,43 @@
+### Collection GET
+GET http://localhost:3000/languages
+Accept : application/json
+Accept-Language: fr;q=0.9,en-US;q=0.8,en;q=0.7,fr_FR
+### Collection POST
+POST http://localhost:3000/languages
+Content-Type: application/json
+Accept-Language: fr;q=0.9,en-US;q=0.8,en;q=0.7,fr_FR
+{
+    "title": "Dormir",
+}
+
+## Item GET
+GET http://localhost:3000/languages/xxxx
+
+### Item PUT : replace
+PUT http://localhost:3000/languages/xxxx
+Content-Type: application/json
+
+{
+    "title": "Manger",
+}
+
+### Item PUT : create
+PUT http://localhost:3000/languages/-1
+Content-Type: application/json
+
+{
+    "title": "Travailler",
+    "completed": true
+}
+
+### Item PUT : create
+PATCH http://localhost:3000/languages/xxxx
+Content-Type: application/json
+
+{
+    "completed": true
+}
+
+### Item DELETE
+DELETE http://localhost:3000/languages/-1
+

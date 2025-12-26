@@ -1,0 +1,42 @@
+### Collection GET
+GET http://localhost:3000/Exercices
+Accept : application/json
+### Collection POST
+POST http://localhost:3000/Exercices
+Content-Type: application/json
+
+{
+    "title": "Dormir",
+}
+
+## Item GET
+GET http://localhost:3000/Exercices/xxxx
+
+### Item PUT : replace
+PUT http://localhost:3000/Exercices/xxxx-+
+Content-Type: application/json
+
+{
+    "title": "Manger",
+}
+
+### Item PUT : create
+PUT http://localhost:3000/Exercices/-1
+Content-Type: application/json
+
+{
+    "title": "Travailler",
+    "completed": true
+}
+
+### Item PUT : create
+PATCH http://localhost:3000/Exercices/xxxx
+Content-Type: application/json
+
+{
+    "completed": true
+}
+
+### Item DELETE
+DELETE http://localhost:3000/Exercices/-1
+
