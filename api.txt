@@ -1,3 +1,0 @@
-Ecrire un middleware express afin de gérer automatiquement le format de sortie à partir de n'importe quelle route avec une fonction unique (ex: res.render) 
-[] Créer le middlewarde
-[] mettre en place le format XML
