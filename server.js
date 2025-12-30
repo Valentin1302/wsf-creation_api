@@ -10,8 +10,8 @@ app.use(example);
 //app.use(exampleWithOptions());
 
 //app.use(require("./routes/user"));
-app.use(require("./routes/game"))
+app.use("/v1", require("./routes/v1/game"));
 
 app.listen(process.env.PORT, () => {
-  console.log(`Server is listening on port ${process.env.PORT}`);
+  console.log(`Ca marche sur ${process.env.PORT}`);
 });
