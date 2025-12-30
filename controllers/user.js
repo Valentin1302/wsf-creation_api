@@ -1,5 +1,4 @@
-const User = require('../models/task.js');
-const UserModel = require('../models/task.js');
+/*const UserModel = require('../models/game.js');
 
 module.exports = {
 
@@ -104,3 +103,4 @@ module.exports = {
         }
     },
 };
+*/

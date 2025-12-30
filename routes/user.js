@@ -1,4 +1,4 @@
-const { Router } = require('express');
+/*const { Router } = require('express');
 const UserController = require('../controllers/user.js');
 
 const router = new Router();
@@ -28,3 +28,4 @@ router.delete("/Users/:id", UserController.delete);
 
 router.post("/Users/:id/activate", UserController.activate);
 module.exports = router;
+*/
