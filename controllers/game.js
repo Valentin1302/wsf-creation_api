@@ -50,8 +50,8 @@ module.exports = {
   },
 
   post: async (req, res, next) => {
-    const newTask = await Game.create(req.body);
-    res.status(201).json(newTask);
+    const newGame = await Game.create(req.body);
+    res.status(201).json(newGame);
   },
 
   get: async (req, res, next) => {

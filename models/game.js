@@ -18,6 +18,10 @@ Game.init(
     publisher_id: {
       type: DataTypes.INTEGER,
       allowNull: true,
+      references: {
+        model: "publishers",
+        key: "id"
+      }
     },
   },
   { sequelize: connection, modelName: "game" }

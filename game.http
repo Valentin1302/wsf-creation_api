@@ -25,7 +25,7 @@ Accept-Language: fr;q=0.9,en-US;q=0.8,en;q=0.7,fr_FR
 
 {
     "title": "FIFA",
-    "release_date": "2017-03-03",
+    "release_date": "2015-04-06",
     "description": "Jeu de foot"
 }
 
@@ -33,12 +33,14 @@ Accept-Language: fr;q=0.9,en-US;q=0.8,en;q=0.7,fr_FR
 GET http://localhost:3000/v1/games/4
 
 ### Item PATCH : modification partielle
-PATCH http://localhost:3000/v1/games/1
+PATCH http://localhost:3000/v1/games/3
 Content-Type: application/json
 
 {
-    "description": "Jeu de combat"
+    "description": "Jeu de combat",
+    "publisher_id": 2
 }
 
 ### Item DELETE
 DELETE http://localhost:3000/v1/games/2
+
