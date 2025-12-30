@@ -1,9 +1,25 @@
 ### Collection GET
-GET http://localhost:3000/games
+GET http://localhost:3000/v1/games
 Accept : application/json
 Accept-Language: fr;q=0.9,en-US;q=0.8,en;q=0.7,fr_FR
+
+### GET en format YAML
+GET http://localhost:3000/v1/games
+Accept: application/x-yaml
+
+### GET en format XML
+GET http://localhost:3000/v1/games
+Accept: application/xml
+
+### GET en format JSON avec versioning V2
+GET http://localhost:3000/v1/games
+Accept: application/json
+Accept-Language: en
+X-API-Version: v2
+
+
 ### Collection POST
-POST http://localhost:3000/games
+POST http://localhost:3000/v1/games
 Content-Type: application/json
 Accept-Language: fr;q=0.9,en-US;q=0.8,en;q=0.7,fr_FR
 
@@ -13,11 +29,11 @@ Accept-Language: fr;q=0.9,en-US;q=0.8,en;q=0.7,fr_FR
     "description": "Jeu de foot"
 }
 
-### Item GET
-GET http://localhost:3000/games/1
+### Item GET en HATEOAS
+GET http://localhost:3000/v1/games/4
 
-### Item PATCH : update
-PATCH http://localhost:3000/games/1
+### Item PATCH : modification partielle
+PATCH http://localhost:3000/v1/games/1
 Content-Type: application/json
 
 {
@@ -25,5 +41,4 @@ Content-Type: application/json
 }
 
 ### Item DELETE
-DELETE http://localhost:3000/games/1
-
+DELETE http://localhost:3000/v1/games/2
