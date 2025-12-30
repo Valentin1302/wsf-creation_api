@@ -1,4 +1,4 @@
-const initTranslation = require("../lib/i18next");
+/*const initTranslation = require("../lib/i18next");
 
 function translationMiddleware(req, res, next) {
     req.t = initTranslation(req, res);
@@ -6,3 +6,4 @@ function translationMiddleware(req, res, next) {
 }
 
 module.exports = translationMiddleware;
+*/

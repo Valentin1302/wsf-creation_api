@@ -4,4 +4,5 @@ module.exports = function versioning(req, res, next) {
     const version = versionHeader ? `v${versionHeader}` : "v1";
 
     req.apiVersion = version;
+    next();
 }

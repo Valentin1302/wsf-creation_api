@@ -13,7 +13,9 @@
   "dependencies": {
     "express": "^5.2.1",
     "i18next": "^25.7.2",
+    "js-yaml": "^4.1.1",
     "js2xmlparser": "^5.0.0",
+    "jsontoxml": "^1.0.1",
     "papaparse": "^5.5.3",
     "pg": "^8.16.3",
     "sequelize": "^6.37.7"

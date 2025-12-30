@@ -1,19 +1,26 @@
-const { Model, DataTypes } = require('sequelize');
-const connection = require('./connection.js');
+const { Model, DataTypes } = require("sequelize");
+const connection = require("./connection.js");
 
 class Game extends Model {}
 
-Game.init({
+Game.init(
+  {
     title: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     release_date: {
-        type: DataTypes.DATEONLY
+      type: DataTypes.DATEONLY,
     },
     description: {
-        type: DataTypes.TEXT
-    }
-}, { sequelize: connection, modelName: 'game' });
+      type: DataTypes.TEXT,
+    },
+    publisher_id: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+  },
+  { sequelize: connection, modelName: "game" }
+);
 
 module.exports = Game;

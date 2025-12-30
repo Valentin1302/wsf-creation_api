@@ -1,0 +1,29 @@
+### Collection GET
+GET http://localhost:3000/games
+Accept : application/json
+Accept-Language: fr;q=0.9,en-US;q=0.8,en;q=0.7,fr_FR
+### Collection POST
+POST http://localhost:3000/games
+Content-Type: application/json
+Accept-Language: fr;q=0.9,en-US;q=0.8,en;q=0.7,fr_FR
+
+{
+    "title": "FIFA",
+    "release_date": "2017-03-03",
+    "description": "Jeu de foot"
+}
+
+### Item GET
+GET http://localhost:3000/games/1
+
+### Item PATCH : update
+PATCH http://localhost:3000/games/1
+Content-Type: application/json
+
+{
+    "description": "Jeu de combat"
+}
+
+### Item DELETE
+DELETE http://localhost:3000/games/1
+
