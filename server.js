@@ -1,14 +1,15 @@
 const express = require("express");
-const example = require("./middlewares/versioning");
-const exampleWithOptions = require("./middlewares/language");
+const version = require("./middlewares/versioning");
 const hateoas = require('./middlewares/hateoas');
+const format = require('./middlewares/format')
 
 const app = express();
 
 app.use(express.json());
 
-app.use(example);
+app.use(version);
 app.use(hateoas);
+app.use(format)
 
 app.use("/v1", require("./routes/v1/game"));
 
